@@ -1,0 +1,16 @@
+@import "~antd/dist/antd.css";
+
+:root {
+  --main-bg-color: #f0f2f5;
+}
+
+.app-content {
+  margin: 30px auto;
+  min-height: 78vh;
+}
+
+.header-title {
+  color: #fff !important;
+  text-align: center;
+  line-height: inherit !important;
+}
