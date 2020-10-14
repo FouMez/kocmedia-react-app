@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import {
     message, Layout, Button, Typography, Form,
 } from 'antd';
+import { PlusCircleOutlined } from '@ant-design/icons';
 import * as UsersAPI from '../api/users';
 import UsersTable from '../components/usersTable';
 import './styles.css';
@@ -53,10 +54,7 @@ const App = () => {
     return (
         <Layout>
             <Header>
-                <Title
-                    level={2}
-                    className="header-title"
-                >
+                <Title level={2} className="header-title">
                     Koch Media Technical Test
                 </Title>
             </Header>
@@ -67,6 +65,7 @@ const App = () => {
                     type="primary"
                     size="large"
                 >
+                    <PlusCircleOutlined className="icon-button" />
                     Add User
                 </Button>
 

@@ -14,3 +14,23 @@
   text-align: center;
   line-height: inherit !important;
 }
+
+.table-action-button {
+  margin: 0 5px;
+}
+
+.success-button {
+  color: #5fc114;
+  background-color: inherit;
+  border: 1px solid #5fc114;
+}
+
+.success-button:hover{
+  color: #83c84e;
+  background-color: inherit;
+  border: 1px solid #83c84e;
+}
+
+.icon-button {
+  margin-right: 5px;
+}

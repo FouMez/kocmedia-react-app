@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
     Button, Form, message, Popconfirm, Table, Popover,
 } from 'antd';
+import { EyeOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import PropTypes from 'prop-types';
 import EditableCell from './editableCell';
 import { update, remove } from '../api/users';
@@ -161,15 +162,17 @@ const UsersTable = ({ originData, refreshUserslist }) => {
                             disabled={editingKey !== ''}
                             onClick={() => {}}
                         >
+                            <EyeOutlined className="icon-button" />
                             Consult
                         </Button>
                     </Popover>
                     <Button
-                        className="table-action-button"
+                        className="table-action-button success-button"
                         type="primary"
                         disabled={editingKey !== ''}
                         onClick={() => edit(record)}
                     >
+                        <EditOutlined className="icon-button" />
                         Edit
                     </Button>
                     <Popconfirm
@@ -181,6 +184,7 @@ const UsersTable = ({ originData, refreshUserslist }) => {
                             danger
                             disabled={editingKey !== ''}
                         >
+                            <DeleteOutlined className="icon-button" />
                             Delete
                         </Button>
                     </Popconfirm>
